@@ -5,6 +5,7 @@ const Student = require('../models/studentModel')
  * /student:
  *   get:
  *     summary: Get a list of students.
+ *     tags: [Students]
  *     description: Retrieve a list of all students.
  *     responses:
  *       200:
@@ -26,6 +27,7 @@ module.exports.listOfStudents = async (req, res, next) => {
  * /student:
  *   put:
  *     summary: Create a new student.
+ *     tags: [Students]
  *     description: Add a new student to Student collection.
  *     requestBody:
  *       required: true
@@ -117,6 +119,7 @@ module.exports.deleteStudent = async (req, res, next) => {
  * /student/avg:
  *   get:
  *     summary: Get a average mark by group.
+ *     tags: [Students]
  *     description: Retrieve a average mark by group.
  *     parameters:
  *       - in: query
